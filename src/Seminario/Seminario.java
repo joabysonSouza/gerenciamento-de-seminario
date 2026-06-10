@@ -3,21 +3,43 @@ package Seminario;
 import Aluno.Aluno;
 import Local.Local;
 
+
 public class Seminario {
     private String titulo;
     private Local local ;
+    private Aluno[] alunos;
+  
    
-    private Aluno aluno1 = new Aluno("gustavo", 23);
 
-    public Seminario(String titulo, Local local) {
-        this.titulo = titulo;
+    public Seminario(String titulo, Local local, Aluno[] alunos){
+       this.titulo = titulo;
         this.local = local;
-
+        this.alunos = alunos;
+       
     }
 
-    public void imprimir() {
-        System.out.println("o aluno " + aluno1.getNome() + " idade " + aluno1.getIdade()
-                + " está participando do Seminario " + titulo + " que está acontenco no endereco " + local.getEndereco());
+    public Aluno[] getAlunos() {
+        return alunos;
     }
+
+    public Local getLocal() {
+        return local;
+    }
+   
+  
+    public void setAlunos(Aluno[] alunos) {
+        this.alunos = alunos;
+    }
+    public void setLocal(Local local) {
+        this.local = local;
+    }
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+    public String getTitulo() {
+        return titulo;
+    }
+    
+  
 
 }
