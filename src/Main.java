@@ -8,6 +8,7 @@ public class Main {
         Local local = new Local("fazenda teste");
         Aluno aluno = new Aluno("Aluno01", 90);
         Aluno[] alunos = {aluno};
+
       
     Seminario seminario = new Seminario("Protecçao do Meio Hambiente", local, alunos);
 
@@ -17,11 +18,7 @@ public class Main {
 
      professor.setSeminarios(semiariosDisponivies);
 
-    
-    
-    
-
-     
+     professor.imprimir();
        
     }
 }

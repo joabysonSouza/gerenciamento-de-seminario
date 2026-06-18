@@ -18,6 +18,10 @@ public class Aluno {
         this.idade = idade;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
     public int getIdade() {
         return idade;
     }

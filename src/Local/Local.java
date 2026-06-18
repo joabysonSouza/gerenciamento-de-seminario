@@ -8,7 +8,7 @@ public class Local {
         this.endereco = endereco;
     }
 
-  public String getEndereco() {
+  public String toString() {
       return endereco;
   }
   public void setEndereco(String endereco) {
